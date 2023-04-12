@@ -20,5 +20,7 @@ export class StoreComponent {
   get categories(): string[] {
     return this.repository.getCategories();
   }
-
+  changeCategory(newCategory?:string){
+    this.selectedCategory = newCategory;
+  }
 }
