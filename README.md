@@ -33,3 +33,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 02-Criação da Develop - 11/04/23
 
 03-Seleção por Categoria - 12/04/23 - Pg.225
+
+04-Paginação e Quantidade por página - 17/04/2023 - Pg.238~~~~~~~~~~~~
