@@ -7,6 +7,7 @@ import {StoreModule} from "./store/store.module";
 import {StoreComponent} from "./store/store.component";
 import {CartDetailComponent} from "./store/cart.Detail.component";
 import {CheckoutComponent} from "./store/checkout.component";
+import {StoreFirstGuard} from "./storeFirst.guard";
 
 @NgModule({
   declarations: [
@@ -16,13 +17,13 @@ import {CheckoutComponent} from "./store/checkout.component";
     BrowserModule,
     StoreModule,
     RouterModule.forRoot([
-      {path:"store", component:StoreComponent},
-      {path:"checkout",component:CheckoutComponent},
-      {path:"cart",component:CartDetailComponent},
+      {path:"store", component:StoreComponent,canActivate:[StoreFirstGuard]},
+      {path:"checkout",component:CheckoutComponent,canActivate:[StoreFirstGuard]},
+      {path:"cart",component:CartDetailComponent,canActivate:[StoreFirstGuard]},
       {path:"**",redirectTo:"/store"}
     ])
   ],
-  providers: [],
+  providers: [StoreFirstGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
