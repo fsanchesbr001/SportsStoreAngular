@@ -37,3 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 04-Paginação e Quantidade por página - 17/04/2023 - Pg.238
 
 05-Carrinho de compras - 18/04/2023 - Pg.250
+
+06-Adicionadas Rotas - 18/04/2023 - Pg.257
+
+07-Guarda de Rotas - 18/04/2023 - Pg.265
