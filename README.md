@@ -41,3 +41,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 06-Adicionadas Rotas - 18/04/2023 - Pg.257
 
 07-Guarda de Rotas - 18/04/2023 - Pg.265
+
+08-Carrinho de Compras Finalizado - 19/04/2023 - Pg.270
