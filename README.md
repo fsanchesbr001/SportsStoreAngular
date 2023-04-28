@@ -26,6 +26,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Run JSON Server
+
+Run `npm run json` on a different terminal, to start the server that will provide data.
+
 ## Versions History:
 
 01-Primeiro Commit - 11/04/23
@@ -44,4 +48,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 08-Carrinho de Compras Finalizado - 19/04/2023 - Pg.270
 
-09-Fim Capitulo 06 - Pg.285
+09-Fim Capitulo 06 - 28/04/2023 - Pg.285
+
+10-Correção de documentação - 28/04/2023
