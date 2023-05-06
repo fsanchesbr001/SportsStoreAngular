@@ -1,18 +1,42 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs";
 import {Order} from "./order.model";
-import {StaticDataSource} from "./static.datasource";
+//import {StaticDataSource} from "./static.datasource";
+import {RestDatasource} from "./rest.datasource";
 
 @Injectable()
 export class OrderRepository{
   private orders:Order[] = [];
+  private loaded:boolean = false;
 
-  constructor(private datasource:StaticDataSource) {}
+  constructor(private datasource:RestDatasource) {}
+
+  loadOrders(){
+    this.loaded = true;
+    this.datasource.getOrders().subscribe(orders=>this.orders=orders);
+  }
 
   getOrders():Order[]{
+    if(!this.loaded){
+      this.loadOrders();
+    }
     return this.orders;
   }
+
+  updateOrder(order:Order){
+    this.datasource.updateOrder(order).subscribe(order=>{
+      this.orders.splice(this.orders.findIndex(o=>o.id==order.id),1,order);
+    });
+  }
+
+  deleteOrder(id:number){
+    this.datasource.deleteOrder(id).subscribe(order=>{
+      this.orders.splice(this.orders.findIndex(o=>id==o.id),1);
+    });
+  }
+
   saveOrder(order:Order):Observable<Order>{
+    this.loaded = false;
     return this.datasource.saveOrder(order);
   }
 }
