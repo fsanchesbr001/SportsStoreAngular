@@ -57,3 +57,5 @@ Run `npm run json` on a different terminal, to start the server that will provid
 12-Usando Autenticação em Admin - 01/05/2023 - Pg.306
 
 13-Menu Admin funcionando com Angular Material - 06/05/2023 - Pg.326
+
+14-Lista de Produtos (Admin) - 11/05/2023 - Pg.333
