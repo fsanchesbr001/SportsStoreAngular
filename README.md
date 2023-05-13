@@ -61,3 +61,5 @@ Run `npm run json` on a different terminal, to start the server that will provid
 14-Lista de Produtos (Admin) - 11/05/2023 - Pg.333
 
 15-Finalização de Produto - 12/05/2023 - Pg.347
+
+16-Fim Capitulo 07 - 13/05/2023 - Pg.357
